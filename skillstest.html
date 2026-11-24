@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--NO AI WAS USED FOR GENERATING CODE NOR GENERATING LAYOUT-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2026.7.3/core.css" />
+    <script type="module" src="https://pyscript.net/releases/2026.7.3/core.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baumans&family=Funnel+Display:wght@300..800&family=GFS+Didot&family=Limelight&family=Pangolin&family=Questrial&display=swap" rel="stylesheet">
+    <title>Element Checker</title>
+    <style>
+        #periodic_table{
+            padding: 30px;
+            width: 700px;
+            color: white;
+            font-family: Baumans, sans;
+            border-radius: 40px;
+            height: auto;
+            margin-top: 40px;
+            background-color: rgb(89, 101, 155);
+        }
+        body{
+            background: url('https://i.pinimg.com/736x/63/dc/fb/63dcfb0b5c8ced34c93868bbe3024b2a.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        h1{
+            text-align: center;
+            font-family: Questrial, sans;
+        }
+        #output1{
+            background-color: rgb(49, 49, 96);
+            border-radius: 10px;
+            border-color: white;
+            border-left-style: solid;
+            border-left-width: 10px;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="periodic_table">
+        <form action="#">
+        <h1><b>Non-Metal Periodic Table</b></h1>
+        <br>
+        <label for="element">Element Name</label>
+        <br>
+        <input type="text" name="element" placeholder="Enter an element..." id="atom" class="form-control">
+        <br>
+        <button class="btn btn-info" type="button" py-click="check_element">Check Details</button>
+        <br>
+        </form>
+        <br>
+        <h2><b>Result:</b></h2>
+        <div id="output1">
+             Your results will display here
+
+        </div>
+    </div>
+    <script type="py" src="main.py"></script>
+</body>
+</html>
