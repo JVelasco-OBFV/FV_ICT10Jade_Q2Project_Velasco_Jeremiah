@@ -60,13 +60,13 @@ def add_brand (e):
     document.getElementById('output1').innerHTML = f'<br><h1><b>List of Club Members:</b></h1> <br> {name_list}'
     display(f'Number of Members: {total_members}',target="output1")
 
-def checkNum(e):
-    name_list1 = ["jeremy taruq", "jake tiangco", "juan nolasco", "jane sebastian", "emmanuel dizon"]
+def checkname(e):
+    name_list1 = ['Raina Agcaoili', 'Immanuel Arce', 'Jerald Aguilar', 'Kassidy Santos', 'Glenn Alcantara', 'Arthur Fernandez', 'Meagan Escano', 'Michelle Acosta', 'Aimee Catubig', 'Inez Estillore', 'Hayden Alonzo', 'Reid Cunanan', 'Tyra Garcia']
     firstname = document.getElementById("firstname").value
     lastname = document.getElementById("lastname").value
     fullname = (f'{firstname} {lastname}')
     con_name = fullname.lower() #coverts fullname variable into lowercase in order to confirm if the user's input is listed; acts as a decoy variable so that the user's original input will still be displayed
     confirm_name = con_name in name_list1 
 
-    message = (f'Sorry {fullname}, your name is not found on the list.', f'Congrats {fullname}! You are now part of the Math Guild.')
+    message = (f'Sorry {fullname}, your name is not found on the list.', f'Congrats {fullname}! You are now part of the Social Sciences Club.')
     document.getElementById("output1").innerHTML = message[confirm_name]

@@ -17,32 +17,70 @@
             padding: 30px;
             width: 700px;
             color: white;
-            font-family: Baumans, sans;
+            font-family: Georgia, serif;
             border-radius: 40px;
             height: auto;
             margin-top: 40px;
-            background-color: rgb(89, 101, 155);
+            background-color: #763234;
         }
         body{
-            background: url('https://i.pinimg.com/736x/63/dc/fb/63dcfb0b5c8ced34c93868bbe3024b2a.jpg');
-            background-size: cover;
-            background-repeat: no-repeat;
+            background: url('https://static.vecteezy.com/system/resources/thumbnails/072/681/546/small/background-autumn-material-wallpaper-tiles-blocks-blocks-textures-of-brick-brick-mottled-with-geometric-shapes-overlapping-rounded-brown-coffe-can-be-used-for-advertisingeting-presentation-free-vector.jpg');
         }
         h1{
             text-align: center;
-            font-family: Questrial, sans;
+            font-family: Georgia, serif;
         }
         #output1{
-            background-color: rgb(49, 49, 96);
+            background-color: rgb(44, 24, 11);
             border-radius: 10px;
-            border-color: white;
+            border-color: rgb(254, 215, 99);
             border-left-style: solid;
             border-left-width: 10px;
             padding: 5px;
         }
+        #main-navbar{
+            position: sticky;
+            top: 0;
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 1.0);
+            height: 40px;
+        }
+        .nav-item{
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            font-family: Georgia, serif;
+            transition: background-color 0.6s;
+        }
+        .nav-item:hover{
+            background-color: rgb(75, 39, 8);
+        }
+        #mynavbar{
+            margin-left: 35%;
+        }
     </style>
 </head>
 <body>
+    <nav class="navbar navbar-expand-lg" style="background-color: rgb(105, 52, 2)"; id="main-navbar"> 
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="mynavbar">
+        <ul class="navbar-nav me-auto nav nav-underline">
+        <li class="nav-item">
+            <a class="nav-link active" href="#" style="color: white">Element Checker</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="drill2.html" style="color: rgb(254, 215, 99)">Member List</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="project.html" style="color: rgb(254, 215, 99)">Creator</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="index.html" style="color: rgb(254, 215, 99)">Homepage</a>
+        </li>
+        </ul>
+        </div>
+    </div>
+</nav>
     <div class="container" id="periodic_table">
         <form action="#">
         <h1><b>Non-Metal Periodic Table</b></h1>
